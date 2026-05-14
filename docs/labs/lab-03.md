@@ -1,396 +1,114 @@
 ---
+title: Experiment 3 - Energy
 outline: deep
-title: Lab 3 - Lists and Data Structures
 ---
 
-# Lab 03: Lists and Data 
+# Experiment 3: Energy
 
-## Pull and Update in VS Code
+## Objective
 
-Before starting any lab, you need to make sure that the repo in your **GitHub** is the latest one. [Sync the repo](./lab-01.md#syncing-fork) if the `upstream` repo have been updated.
+To verify the law of conservation of energy by using free fall motion.
 
-Once the online repo is in-sync, bring those changes down to your PC by clicking `Source Control` and then `...` beside `Changes` and click `Pull`.
+## Theory
 
-<p align="center">
-    <img src="/labs/lab-01/lab-1-1.png" alt="drawing" width="400"/>
-</p>
+Consider a steel ball of mass *m* initially at rest at height *h* vertically above a velocity detector. By taking the position of the velocity detector as the reference point, the potential energy is *mgh* and the kinetic energy of the ball is zero. Thus, the total initial energy, **E₁** of the steel ball is given by:
 
-## Why Do We Need Data Structures?
+$$E_1 = mgh \tag{3.1}$$
 
-Launch **VS Code** and open the `exercise.py` file in `/labs/lab03/`. We'll discover why storing multiple values in individual variables becomes a nightmare.
+When the steel ball is released, it falls freely with acceleration due to gravity, *g*. At the instance it reaches the velocity detector, the gravitational potential energy is zero and its kinetic energy is ½*mv*². Hence, the total final energy, **E₂** of the steel ball is given by:
 
-### The Problem with Individual Variables
+$$E_2 = \frac{1}{2}mv^2 \tag{3.2}$$
 
-Imagine you're building a student grade system for your class. You need to store scores for just 5 students. Copy this code into your `exercise.py` file:
+### Law of Conservation of Energy
 
-```python
-# Storing 5 student scores
-score1 = 85
-score2 = 92
-score3 = 78
-score4 = 88
-score5 = 95
+According to the law of conservation of energy, in the absence of external forces, the total energy of a system remains constant. In this case, the law is verified if we demonstrate experimentally that **E₁ equals E₂**, that is:
 
-# To find the average... we need to manually add each one
-total = score1 + score2 + score3 + score4 + score5
-average = total / 5
-print(f"Average score: {average}")
-```
+$$\frac{1}{2}mv^2 = mgh$$
 
-Run this code. It works, but notice the problems:
+And we obtain:
 
-1. You had to create 5 separate variables
-2. You had to manually type each variable name in the calculation
-3. The calculation formula changes if you add or remove students
+$$v^2 = 2gh \tag{3.3}$$
 
-Now imagine you have 50 students. Or 500 students. You'd need to create 500 variables and type all 500 names in your calculation
+> **Key Result:** If a graph of $v^2$ against $h$ is plotted, we should obtain a straight line passing through the origin with gradient equals $2g$.
 
-::: warning PROBLEM
-Individual variables don't scale. The more data you have, the more unmanageable your code becomes. You can't loop through variables, and every change requires editing multiple lines.
-:::
+## Apparatus
 
-### The Solution: Lists
+- Steel ball
+- Metre rule
+- Free fall adaptor (electromagnetic ball release)
+- Two photogates PG A and PG B (Velocity detector)
+- Timer
+- Retort stand
 
-Replace all the code in your `exercise.py` with this:
+## Procedure
 
-```python
-# Store all scores in ONE list
-scores = [85, 92, 78, 88, 95]
+### Setup
 
-# Now we can access individual scores by index
-print(f"First score: {scores[0]}")
-print(f"Third score: {scores[2]}")
-print(f"Last score: {scores[4]}")
-```
+1. Measure the distance, *s* between the photogates
+2. Set up the apparatus as shown in **`Figure 3.1`**
 
-Run this code. Look at the difference:
+<div style="display: flex; justify-content: center;">
+  <img src="/labs/lab-03/figure-3-1.png" alt="Figure 3.1: Energy Conservation Apparatus" style="max-width: 400px; margin: 20px 0;" />
+</div>
 
-- **One variable** instead of five
-- **Organized by position** - you can access any score using its index
-- **Adding more students?** Just add numbers to the list
+### Steps
 
-Try adding more scores to the list:
-```python
-scores = [85, 92, 78, 88, 95, 73, 91, 87]
-print(f"We now have {scores} scores")
-```
+1. Switch on the timer and reset to zero
+2. Set the falling distance, *h* at 15 cm
+3. Release the steel ball and record the time, *t* for the ball to pass through the photogates
+4. Repeat the measurement at least **2 times** to obtain the average time
+5. Repeat steps 2-4 for falling distances: *h* = 20, 25, 30, 35, 40, and 45 cm
 
-Run it again. The list grows easily
+### Data Analysis
 
-::: tip INFO
-A **data structure** is a way to organize and store multiple values so they can be used efficiently. Instead of many variables, you use ONE structure that holds everything.
-:::
+6. For each falling distance, *h*, calculate the velocity, *v* using:
+   $$v = \frac{s}{t}$$
+   
+   where *s* is the distance between the photogates and *t* is the average time
 
-## What is a List?
+7. Calculate *v²* for each measurement
 
-A list is **Python**'s most commonly used data structure. Think of it as a numbered container where you can store multiple items in a specific order.
+8. Tabulate all the data in a suitable table
 
-### Creating Your First List
+9. Plot a graph of *v²* against *h*
 
-Copy this code into your `exercise.py`:
+10. Determine the acceleration due to gravity, *g* from the gradient of the graph using:
+    $$g = \frac{\text{gradient}}{2}$$
 
-```python
-# Creating different types of lists
-fruits = ["apple", "banana", "cherry"]
-numbers = [10, 20, 30, 40, 50]
-prices = [19.99, 24.50, 15.00]
+11. Determine the uncertainty for acceleration due to gravity, *Δg*
 
-print(fruits)
-print(numbers)
-print(prices)
-```
+### Verification
 
-Run this code. What do you see?
+12. Verify the law of conservation of energy by comparing the acceleration due to gravity, *g* obtained from the experiment with the standard value (≈ 9.81 m/s²)
+13. Write comments explaining the results and any discrepancies
 
-Each list is printed with square brackets `[ ]` and commas separating the items. This is how **Python** represents lists.
+## Data Recording Template
 
-### List Structure
+### Energy Conservation Data Table
 
-Every list has these components:
+**Photogate Separation Distance:** *s* = ......... m
 
-```python
-fruits = ["apple", "banana", "kiwi"]
-```
+<div class='center-table'>
 
-| Component | Value |
-|-----------|-------|
-| **List name** | `fruits` |
-| **Elements** | `"apple"`, `"banana"`, `"kiwi"` |
-| **Number of elements** | 3 |
-| **List size** | 3 |
+| No | height *h* (cm) ($\pm$.......) | Time *t* (s) ($\pm$.......) | Average Time *t̄* (s) | Velocity, *v* (m/s) | Velocity Squared *v²* (m²/s⁴) |
+|:---:|:---:|---|---|---|---|
+| 1 | 15 | | | | |
+| 2 | 20 | | | | |
+| 3 | 25 | | | | |
+| 4 | 30 | | | | |
+| 5 | 35 | | | | |
+| 6 | 40 | | | | |
+| 7 | 45 | | | | |
 
-The **size** and **number of elements** mean the same thing - how many items are in the list.
+</div>
 
-### What Can Lists Hold?
+## Guideline Video
 
-Lists can store any type of data. Try this:
-
-```python
-# Different data types
-integers = [10, 20, 30, 40, 50]
-floats = [1.5, 2.3, 3.7, 4.1]
-strings = ["apple", "banana", "cherry"]
-booleans = [True, False, True, False]
-
-print("Integers:", integers)
-print("Floats:", floats)
-print("Strings:", strings)
-print("Booleans:", booleans)
-```
-
-
-## Accessing List Elements: Indexing
-
-Now that you can create lists, you need to know how to access individual items. This is where **indexing** comes in.
-
-### Positive Indexing
-
-**Python** numbers list elements starting from `0`. This is called **zero-based indexing**.
-
-```python
-fruits = ["apple", "banana", "kiwi", "durian", "guava", "orange"]
-#          0        1         2       3         4        5
-```
-
-Copy this code:
-
-```python
-fruits = ["apple", "banana", "kiwi", "durian", "guava", "orange"]
-
-print(fruits[0])  # First element
-print(fruits[2])  # Third element
-print(fruits[5])  # Sixth element
-```
-
-Run this code. What do you see?
-
-
-::: warning COMMON MISTAKE
-The first element is at index `0`, not `1`
-:::
-
-### Negative Indexing
-
-**Python** also lets you count from the **end** of the list using negative numbers:
-
-```python
-fruits = ["apple", "banana", "kiwi", "durian", "guava", "orange"]
-#          -6       -5        -4      -3        -2       -1
-```
-
-Try this:
-
-```python
-fruits = ["apple", "banana", "kiwi", "durian", "guava", "orange"]
-
-print(fruits[-1])  # Last element
-print(fruits[-2])  # Second-to-last element
-print(fruits[-6])  # First element (counting from end)
-```
-
-Run this code. Notice that:
-- `fruits[-1]` gives you the **last** element (`"orange"`)
-- `fruits[-2]` gives you the **second-to-last** element (`"guava"`)
-
-::: tip WHEN TO USE NEGATIVE INDEXING
-Use `[-1]` when you need the last item but don't know the list size. This is much more common than other negative indices. In practice, you'll rarely use anything beyond `[-1]` or `[-2]`.
-:::
-
-### Nested List Indexing
-
-Lists can contain other lists This is called **nesting**. Try this:
-
-```python
-students = [
-    ["Ali", 85, 92],
-    ["Sara", 90, 88],
-    ["Ahmad", 78, 82]
-]
-
-# Access the first student's data
-print(students[0])  # ['Ali', 85, 92]
-
-# Access Ali's name
-print(students[0][0])  # Ali
-
-# Access Sara's second score
-print(students[1][2])  # 88
-```
-
-Run this code. The pattern is `list[outer_index][inner_index]`.
-
-### The IndexError
-
-What happens if you try to access an index that doesn't exist? Try this:
-
-```python
-fruits = ["apple", "banana", "cherry"]
-print(fruits[5])  # Only 3 elements, but asking for index 5
-```
-
-Run this code. You'll see:
-
-```
-IndexError: list index out of range
-```
-
-This error means you tried to access a position that doesn't exist in the list.
-
-::: danger PREVENTING IndexError
-Always make sure the index you're using is within the valid range. The valid indices for a list with 3 elements are 0, 1, 2 (or -1, -2, -3).
-:::
-
-## Modifying Lists
-
-Lists are **mutable**, which means you can change them after creation.
-
-### Changing Elements
-
-You can modify individual elements by assigning a new value to an index:
-
-```python
-numbers = [10, 20, 30]
-print(numbers)  # [10, 20, 30]
-
-numbers[1] = 25  # Change the second element
-print(numbers)  # [10, 25, 30]
-```
-
-Try this yourself. Change different indices and see what happens
-
-
-
-## Exercise 1: Pixel Brightness Checker <Badge type="warning" text="Task" />
-
-Navigate to `/labs/lab03/exercise1/exercise1.py`.
-
-**Situation:**
-
-An image processing app analyzes a row of pixels stored as grayscale values (0-255, where 0 is black and 255 is white). The app needs to count "bright spots" - pixels that are brighter than BOTH their left and right neighbors.
-
-**Example:**
-```
-Pixels: [100, 120, 200, 150, 180, 160, 140]
-         0    1    2    3    4    5    6
-
-Index 2: brighter than neighbors → Bright spot
-Index 4: brighter than neighbors → Bright spot
-Count = 2
-```
-
-**Task:**
-
-Write a function that takes a list of pixel values, returns the count of bright spots.
-
-## Exercise 2: Subway Station Hop Counter <Badge type="warning" text="Task" />
-
-Navigate to `/labs/lab03/exercise2/exercise2.py`.
-
-**Situation:**
-
-A subway line has stations stored in order in a list. A passenger wants to know how many stops between two stations by name.
-
-If a station name does not exist in the list, return `-1`.
-
-**Example:**
-```
-Stations: ["Central", "Marina", "Bukit", "Orchard", "Sentosa"]
-
-From "Marina" to "Sentosa"
-Marina at index 1, Sentosa at index 4
-Stops = 3
-
-From "Marina" to "Unknown"
-→ -1 (station name does not exist)
-```
-
-**Task:**
-
-Write functions that:
-1. Find a station's position in the list
-2. Calculate the stops between two stations
-
-## Exercise 3: Cinema Seat Finder <Badge type="warning" text="Task" />
-
-Navigate to `/labs/lab03/exercise3/exercise3.py`.
-
-**Situation:**
-
-A cinema booking system stores seat availability for a row as a list. Each element represents a seat: `0` means empty, `1` means taken. A couple wants to sit together, so the system needs to check if there are two adjacent empty seats anywhere in the row.
-
-**Example:**
-```
-Row: [1, 0, 0, 1, 0, 1, 0, 0]
-      0  1  2  3  4  5  6  7
-
-Adjacent empty pairs found at positions (1,2) and (6,7)
-→ True
-```
-
-**Task:**
-
-Write a function that takes a list of seats, returns `True` if adjacent empty seats exist, `False` otherwise.
-
-## Exercise 4: Weather Trend Analyzer <Badge type="warning" text="Task" />
-
-Navigate to `/labs/lab03/exercise4/exercise4.py`.
-
-**Situation:**
-
-A weather app tracks daily temperatures. A "warming trend" is detected when the temperature increases for 2 consecutive days (day 2 > day 1 AND day 3 > day 2).
-
-**Example:**
-```
-Temps: [25, 27, 29, 28, 30, 32, 31]
-        0   1   2   3   4   5   6
-
-Days 0-1-2: 25 → 27 → 29 (increasing twice) → Warming trend found
-Days 3-4-5: 28 → 30 → 32 (increasing twice) → Warming trend found
-```
-
-**Task:**
-
-Write a function that takes a list of temperatures, returns `True` if a warming trend exists, `False` otherwise.
-
-## Exercise 5: Race Overtake Detector <Badge type="warning" text="Task" />
-
-Navigate to `/labs/lab03/exercise5/exercise5.py`.
-
-**Situation:**
-
-A motorsport race tracker records car positions at two checkpoints. Each list contains car numbers in finishing order - index 0 is 1st place, index 1 is 2nd place, and so on.
-
-All cars exist in both checkpoint lists.
-
-**Example 1:**
-```
-Checkpoint 1: [5, 3, 7, 2, 9]
-Checkpoint 2: [5, 7, 3, 2, 9]
-
-Did Car 7 overtake Car 3?
-- Before: Car 7 at index 2, Car 3 at index 1 → Car 7 behind
-- After:  Car 7 at index 1, Car 3 at index 2 → Car 7 ahead
-→ True
-```
-
-**Example 2:**
-```
-Checkpoint 1: [5, 3, 7, 2, 9]
-Checkpoint 2: [5, 7, 3, 2, 9]
-
-Did Car 5 overtake Car 3?
-→ False (Car 5 was already ahead)
-```
-
-**Task:**
-
-Write functions that:
-1. Find a car's position in a checkpoint list
-2. Determine if one car overtook another
-
-## Commit and Push Your Work
-
-After completing all exercises, save all your files and commit them to your repository.
-
-Use **VS Code**'s source control panel to stage your changes, add a meaningful commit message like "Complete Lab 3: Lists and Data Structures", and push your changes to **GitHub**. Check your repository online to ensure all files have been uploaded successfully.
-
+<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/-Iv3hIq-Y8I?si=yzIuWVW3xqI2RCJZ"
+    title="Energy Conservation Experiment"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+</div>

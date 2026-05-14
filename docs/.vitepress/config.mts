@@ -1,171 +1,102 @@
 import { defineConfig } from 'vitepress'
+import mathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Python Programming 2",
-  description: "Course and Labs Informations",
-  base: '/Python-Programming-2/',
+  title: "Physics I",
+  description: "Physics Notes, Tutorials, Labs, Formula Sheets and Past Year",
+  base: '/physics-study-hub/',
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }] // Updated href
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }], // Updated href
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css' }]
   ],
 
+  markdown: {
+    config: (md) => {
+      md.use(mathjax3)
+    }
+  },
+
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    
+    lastUpdated: {
+      text: 'Last Updated', 
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium',
+        timeZone: 'Asia/Kuala_Lumpur'
+      }
+    },
+
     nav: [
       {
         text: 'Home',
         link: '/'
       },
-      {
-        text: 'Assessments',
-        items: [
-          { text: 'Lab Test 1', link: '/assessments/lab-test-1' },
-          { text: 'Lab Test 2', link: '/assessments/lab-test-2' },
-          { text: 'Lab Test 3', link: '/assessments/lab-test-3' },
-          { text: 'Assignment', link: '/assessments/assignment' },
-          { text: 'Check Marks', link: '/assessments/marks' }
-        ],
-        activeMatch: '^/assessments/'
-      },
+
       {
         text: 'Course Informations',
         items: [
-          { text: 'Assessments', link: '/course/course' },
-          { text: 'Schedule', link: '/course/schedule' },
+          { text: 'Course Outline', link: '/course/course-outline' },
+          { text: 'Assessments', link: '/course/assessments' }
         ],
         activeMatch: '^/course/'
       },
-      {
-        text: 'Tutorials',
-        items: [
-          { text: 'Functions', link: '/tutorials/chapter-functions-tutorial-1' },
-          { text: 'Lists', link: '/tutorials/chapter-lists-tutorial-1' },
-          { text: 'Tuples', link: '/tutorials/chapter-tuples-tutorial-1' },
-          { text: 'Sets', link: '/tutorials/chapter-sets-tutorial-1' },
-          { text: 'Dictionaries', link: '/tutorials/chapter-dictionaries-tutorial-1' },
-          { text: 'Combined Data Structures', link: '/tutorials/chapter-mixed-datastructures-tutorial-1' },
-          { text: 'Files', link: '/tutorials/chapter-files-tutorial-1' },
-          { text: 'DataFrame & Data Analysis', link: '/tutorials/chapter-dataframe-tutorial-1' }
-        ],
-        activeMatch: '^/tutorials/'
-      },
-      {
-        text: 'Labs',
-        items: [
-          { text: 'Installation', link: '/labs/installation' },
-          { text: 'Lab 1', link: '/labs/lab-01' },
-          { text: 'Lab 2', link: '/labs/lab-02' },
-          { text: 'Lab 3', link: '/labs/lab-03' },
-          { text: 'Lab 4', link: '/labs/lab-04' },
-          { text: 'Lab 5', link: '/labs/lab-05' },
-          { text: 'Lab 6', link: '/labs/lab-06' },
-          { text: 'Lab 7', link: '/labs/lab-07' },
-          { text: 'Lab 8', link: '/labs/lab-08' },
-          { text: 'Lab 9', link: '/labs/lab-09' },
-          // { text: 'Lab 10', link: '/labs/lab-10' },
-          // { text: 'Lab 11', link: '/labs/lab-11' },
-          // { text: 'Lab 12', link: '/labs/lab-12' },
-          // { text: 'Lab 13', link: '/labs/lab-13' }
-        ],
-        activeMatch: '^/labs/'
-      },
+
       {
         text: 'Lectures',
         items: [
-          { text: 'Chapter 1', link: '/lectures/chapter-01' },
-          { text: 'Chapter 2', link: '/lectures/chapter-02' },
-          { text: 'Chapter 3', link: '/lectures/chapter-03' },
-          { text: 'Chapter 4', link: '/lectures/chapter-04' },
-          { text: 'Chapter 5', link: '/lectures/chapter-05' },
-          { text: 'Chapter 6', link: '/lectures/chapter-06' },
+          { text: 'Physical Quantities & Measurements', link: '/lectures/topic-01' },
+          { text: 'Kinematics of Linear Motion', link: '/lectures/topic-02' },
+          { text: 'Dynamics of Linear Motion', link: '/lectures/topic-03' },
+          { text: 'Work, Energy & Power', link: '/lectures/topic-04' },
+          { text: 'Circular Motion', link: '/lectures/topic-05' },
+          { text: 'Rotation of Rigid Body', link: '/lectures/topic-06' },
+          { text: 'Oscillations & Waves', link: '/lectures/topic-07' },
+          { text: 'Physics of Matter', link: '/lectures/topic-08' },
+          { text: 'Kinetic Theory & Thermodynamics', link: '/lectures/topic-09' }
         ],
         activeMatch: '^/lectures/'
       },
-      /*
+
       {
-        text: 'Exams',
-        link: '/exams/',
-        activeMatch: '^/exams/'
+        text: 'Formula Sheets',
+        link: '/formulas/list-const-formulae',
+        activeMatch: '^/formulas/'
       },
-      */
+      
+      {
+        text: 'Tutorials',
+        items: [
+          { text: 'Tutorial 1', link: '/tutorials/tutorial-01' },
+          { text: 'Tutorial 2', link: '/tutorials/tutorial-02' },
+          { text: 'Tutorial 3', link: '/tutorials/tutorial-03' }
+        ],
+        activeMatch: '^/tutorials/'
+      },
+
+      {
+        text: 'Labs',
+        items: [
+          { text: 'Lab Report Writing Format', link: '/labs/lrt-format' },
+          { text: 'Experiment 1', link: '/labs/lab-01' },
+          { text: 'Experiment 2', link: '/labs/lab-02' },
+          { text: 'Experiment 3', link: '/labs/lab-03' },
+          { text: 'Experiment 4', link: '/labs/lab-04' },
+          { text: 'Experiment 5', link: '/labs/lab-05' },
+          { text: 'Experiment 6', link: '/labs/lab-06' }
+        ],
+        activeMatch: '^/labs/'
+      },
+
+      {
+        text: 'Past Year',
+        link: '/past-year/',
+        activeMatch: '^/past-year/'
+      }
     ],
 
     sidebar: {
-      '/assessments/': [
-        {
-          text: 'Lab Test 1',
-          link: '/assessments/lab-test-1'
-        },
-        {
-          text: 'Lab Test 2',
-          link: '/assessments/lab-test-2'
-        },
-        {
-          text: 'Lab Test 3',
-          link: '/assessments/lab-test-3'
-        },
-        {
-          text: 'Assignment',
-          link: '/assessments/assignment'
-        },
-        {
-          text: 'Check Marks',
-          link: '/assessments/marks'
-        }
-      ],
-      '/labs/': [
-        {
-          text: 'Installation',
-          link: '/labs/installation'
-        },
-        {
-          text: 'Lab 1',
-          link: '/labs/lab-01'
-        },
-        {
-          text: 'Lab 2',
-          link: '/labs/lab-02'
-        },
-        {
-          text: 'Lab 3',
-          link: '/labs/lab-03'
-        },
-        {
-          text: 'Lab 4',
-          link: '/labs/lab-04'
-        },
-        {
-          text: 'Lab 5',
-          link: '/labs/lab-05'
-        },
-        {
-          text: 'Lab 6',
-          link: '/labs/lab-06'
-        },
-        {
-          text: 'Lab 7',
-          link: '/labs/lab-07'
-        },
-        {
-          text: 'Lab 8',
-          link: '/labs/lab-08'
-        },
-        {
-          text: 'Lab 9',
-          link: '/labs/lab-09'
-        }
-      ],
-
-      '/course/': [
-        {
-          text: 'Assessments',
-          link: '/course/course'
-        },
-        {
-          text: 'Schedule',
-          link: '/course/schedule'
-        },
-      ],
 
       '/lectures/': [
         {
@@ -229,6 +160,37 @@ export default defineConfig({
         }
       ],
 
+      '/labs/': [
+        {
+          text: 'Lab Report Writing Format',
+          link: '/labs/lrt-format'
+        },
+        {
+          text: 'Experiment 1',
+          link: '/labs/lab-01'
+        },
+        {
+          text: 'Experiment 2',
+          link: '/labs/lab-02'
+        },
+        {
+          text: 'Experiment 3',
+          link: '/labs/lab-03'
+        },
+        {
+          text: 'Experiment 4',
+          link: '/labs/lab-04'
+        },
+        {
+          text: 'Experiment 5',
+          link: '/labs/lab-05'
+        },
+        {
+          text: 'Experiment 6',
+          link: '/labs/lab-06'
+        }
+      ],
+
       /*
       '/exams/': [
         {
@@ -275,16 +237,9 @@ export default defineConfig({
       */
     },
 
-    socialLinks: [
-      {
-        icon: 'github',
-        link: 'https://github.com/JSK-KML/CP125-Class-Repo'
-      }
-    ],
-
     footer: {
       message: 'Released under the MIT License. All rights reserved.',
-      copyright: 'Copyright © 2025-Present Muhammad Aiman Haris'
+      copyright: 'Copyright © 2026-Present Muhammad Haziq Fazri'
     },
 
     search: {

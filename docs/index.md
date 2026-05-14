@@ -5,60 +5,55 @@ layout: home
 title: Home
 
 hero:
-  name: "CP125 Python Programming 2"
-  text: "Course and Lab Information"
-  tagline: Structured Python Labs and Exercises
+  name: "SP015 Physics I"
+  text: "Course Notes, Tutorials, Labs & Formula Sheets"
+  tagline: Master the fundamentals of Physics with comprehensive study materials
   actions:
     - theme: brand
-      text: Course Informations
-      link: /course/course
+      text: Start Learning
+      link: /course/course-outline
+    - theme: alt
+      text: View Formulas
+      link: /formulas/list-const-formulae
 
 features:
-  - title: Course Informations
-    details: Complete course overview including assessment breakdown, weekly schedules, learning objectives, and grading criteria to help you succeed in CP125 Python Programming
+  - title: 📚 Lecture Notes
+    details: Comprehensive lecture notes covering all 9 topics from Physical Quantities to Thermodynamics
+  
+  - title: 📝 Formula Sheets
+    details: Quick reference formula sheets for every topic to help you solve problems efficiently
+  
+  - title: 🔬 Lab Experiments
+    details: Practical lab experiments with safety guidelines and detailed procedures
+  
+  - title: ✏️ Tutorials
+    details: Practice problems and solutions to reinforce your understanding
+  
+  - title: 📋 Course Info
+    details: Complete course outline, schedule, and assessment breakdown
+  
+  - title: 📊 Past Year Papers
+    details: Previous exam papers to prepare for your assessments
 ---
-
-
-<CodeGroup>
-<CodeGroupItem title="Python" active>
-
-```python
-print("Hello, World!")
-```
-
-</CodeGroupItem>
-
-</CodeGroup>
-
-
-
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 
 const members = [
   {
-    avatar: 'https://github.com/Aiman-Haris.png',
-    name: 'Muhammad Aiman Haris',
-    title: 'Lecturer',
+    avatar: 'https://github.com/haziqfazri.png',
+    name: 'Muhammad Haziq Fazri',
+    title: 'Physics Lecturer',
     org : 'Kolej Matrikulasi Labuan',
-    desc : 'I have several years of experience in teaching programming using isPython, Java and JavaScript. If you have any questions, please don\'t hesitate to reach out via the link below. Enjoy the course!',
     links: [
-      {icon : 'whatsapp', link :'https://wasap.my/+60143294625'},
-      { icon: 'gmail', link: 'mailto:bm-3570@moe-dl.edu.my' },
-      { icon: 'github', link: 'https://github.com/Aiman-Haris' }
-      
+      { icon: 'whatsapp', link :'https://wasap.my/+60173874434'},
+      { icon: 'gmail', link: 'mailto:bm-3466@moe-dl.edu.my' }
     ]
   },
-
 ]
 </script>
 
 <br>
-<br>
-<br>
-<br>
-
 
 # Course Lecturer
 
