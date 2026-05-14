@@ -52,7 +52,7 @@ export const nav: DefaultTheme.NavItem[] = [
     {
         text: 'Labs',
         items: [
-            { text: 'Lab Report Guide', link: '/labs/00-lab-report-guide' },
+            { text: 'Lab Report Writing Format', link: '/labs/00-lab-report-writing-format' },
             { text: 'Experiment 1', link: '/labs/01-measurements-and-uncertainties' },
             { text: 'Experiment 2', link: '/labs/02-kinematics' },
             { text: 'Experiment 3', link: '/labs/03-energy' },
