@@ -23,15 +23,15 @@ export const nav: DefaultTheme.NavItem[] = [
     {
         text: 'Lectures',
         items: [
-            { text: 'Physical Quantities & Measurements', link: '/lectures/topic-01' },
-            { text: 'Kinematics of Linear Motion', link: '/lectures/topic-02' },
-            { text: 'Dynamics of Linear Motion', link: '/lectures/topic-03' },
-            { text: 'Work, Energy & Power', link: '/lectures/topic-04' },
-            { text: 'Circular Motion', link: '/lectures/topic-05' },
-            { text: 'Rotation of Rigid Body', link: '/lectures/topic-06' },
-            { text: 'Oscillations & Waves', link: '/lectures/topic-07' },
-            { text: 'Physics of Matter', link: '/lectures/topic-08' },
-            { text: 'Kinetic Theory & Thermodynamics', link: '/lectures/topic-09' }
+            { text: 'Physical Quantities & Measurements', link: '/lectures/01-measurements-and-units' },
+            { text: 'Kinematics of Linear Motion', link: '/lectures/02-kinematics' },
+            { text: 'Dynamics of Linear Motion', link: '/lectures/03-dynamics' },
+            { text: 'Work, Energy & Power', link: '/lectures/04-energy-and-power' },
+            { text: 'Circular Motion', link: '/lectures/05-circular-motion' },
+            { text: 'Rotation of Rigid Body', link: '/lectures/06-rotation-of-rigid-body' },
+            { text: 'Oscillations & Waves', link: '/lectures/07-oscillations-and-waves' },
+            { text: 'Physics of Matter', link: '/lectures/08-physics-of-matter' },
+            { text: 'Kinetic Theory & Thermodynamics', link: '/lectures/09-thermodynamics' }
         ],
         activeMatch: '^/lectures/'
     },
@@ -52,13 +52,13 @@ export const nav: DefaultTheme.NavItem[] = [
     {
         text: 'Labs',
         items: [
-            { text: 'Lab Report Writing Format', link: '/labs/lrt-format' },
-            { text: 'Experiment 1', link: '/labs/lab-01' },
-            { text: 'Experiment 2', link: '/labs/lab-02' },
-            { text: 'Experiment 3', link: '/labs/lab-03' },
-            { text: 'Experiment 4', link: '/labs/lab-04' },
-            { text: 'Experiment 5', link: '/labs/lab-05' },
-            { text: 'Experiment 6', link: '/labs/lab-06' }
+            { text: 'Lab Report Guide', link: '/labs/00-lab-report-guide' },
+            { text: 'Experiment 1', link: '/labs/01-measurements-and-uncertainties' },
+            { text: 'Experiment 2', link: '/labs/02-kinematics' },
+            { text: 'Experiment 3', link: '/labs/03-energy' },
+            { text: 'Experiment 4', link: '/labs/04-rotation-of-rigid-body' },
+            { text: 'Experiment 5', link: '/labs/05-simple-harmonic-motion' },
+            { text: 'Experiment 6', link: '/labs/06-standing-waves' }
         ],
         activeMatch: '^/labs/'
      }
