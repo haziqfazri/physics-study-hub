@@ -17,17 +17,6 @@ export const sidebars: DefaultTheme.Sidebar = {
     { text: 'Topic 9', link: '/lectures/09-thermodynamics' }
   ],
 
-  '/tutorials/': [
-    { text: 'Functions', link: '/tutorials/chapter-functions-tutorial-1' },
-    { text: 'Lists', link: '/tutorials/chapter-lists-tutorial-1' },
-    { text: 'Tuples', link: '/tutorials/chapter-tuples-tutorial-1' },
-    { text: 'Sets', link: '/tutorials/chapter-sets-tutorial-1' },
-    { text: 'Dictionaries', link: '/tutorials/chapter-dictionaries-tutorial-1' },
-    { text: 'Combined Data Structures', link: '/tutorials/chapter-mixed-datastructures-tutorial-1' },
-    { text: 'Files', link: '/tutorials/chapter-files-tutorial-1' },
-    { text: 'DataFrame & Data Analysis', link: '/tutorials/chapter-dataframe-tutorial-1' }
-  ],
-
   '/labs/': [
     { text: 'Lab Report Writing Format', link: '/labs/00-lab-report-writing-format' },
     { text: 'Experiment 1', link: '/labs/01-measurements-and-uncertainties' },
