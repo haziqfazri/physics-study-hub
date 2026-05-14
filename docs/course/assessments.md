@@ -9,13 +9,13 @@ outline: deep
 
 <div class="center-table">
 
-| **Assessment**        | **Weightage (%)** |
-|-----------------------|:-----------------:|
-| Individual Assignment | 10                |
-| Practical Test        | 15                |
-| Lab Report Test       | 15                |
-| UPS                   | 20                |
-| Final Exam (PSPM)     | 40                |
+| **Assessment**        | **Weightage (%)** | **Date**  |
+|-----------------------|:-----------------:|:---------:|
+| Individual Assignment | 10                |TBD        |
+| Practical Test        | 15                |TBD        |
+| Lab Report Test       | 15                |TBD        |   
+| UPS                   | 20                |TBD        |
+| Final Exam (PSPM)     | 40                |TBD        |
 
 </div>
 

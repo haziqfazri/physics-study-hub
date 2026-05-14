@@ -5,7 +5,7 @@ Outline: deep
 
 # Course Topics
 
-## Topic 1 — Physical Quantities and Measurements (3 marks)
+## Topic 1 — Physical Quantities and Measurements 
 
 - 1.1 Dimensions of physical quantities
 - 1.2 Scalars and vectors

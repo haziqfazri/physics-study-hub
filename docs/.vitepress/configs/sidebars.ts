@@ -5,6 +5,11 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const sidebars: DefaultTheme.Sidebar = {
+  '/course': [
+    { text: 'Course Outline', link: '/course/course-outline' },
+    { text: 'Course Assessments', link: '/course/assessments' } 
+  ],
+
   '/lectures/': [
     { text: 'Topic 1', link: '/lectures/01-measurements-and-units' },
     { text: 'Topic 2', link: '/lectures/02-kinematics' },

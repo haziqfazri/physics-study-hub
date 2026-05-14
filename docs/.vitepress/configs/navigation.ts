@@ -16,7 +16,7 @@ export const nav: DefaultTheme.NavItem[] = [
         text: 'Course Informations',
         items: [
             { text: 'Course Outline', link: '/course/course-outline' },
-            { text: 'Assessments', link: '/course/assessments' }
+            { text: 'Course Assessments', link: '/course/assessments' }
         ],
         activeMatch: '^/course/'
     },
