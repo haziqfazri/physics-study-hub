@@ -2,8 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-    --vp-font-family-base: 'Plus Jakarta Sans', sans-serif;
-    word-spacing: 0.1em;
+  --vp-c-text-1: #1a1a1f;
+  --vp-c-text-2: #595960;
+  --vp-c-text-3: #a8a8ad;
+
+  --vp-font-family-base: 'Plus Jakarta Sans', sans-serif;
+  word-spacing: 0.1em;
+}
+
+.dark {
+  --vp-c-text-1: #f0f0f3;
+  --vp-c-text-2: #b8b8bd;
+  --vp-c-text-3: #6d6d73;
 }
 
 /* Custom style for Open PDF button */
@@ -55,4 +65,13 @@
   height: 100%;
   left: 0;
   top: 0;
+}
+
+/* Roman numeral ordered lists for opt-in HTML lists in Markdown. */
+.vp-doc ol.roman {
+  list-style-type: lower-roman;
+}
+
+.vp-doc ol.roman-upper {
+  list-style-type: upper-roman;
 }

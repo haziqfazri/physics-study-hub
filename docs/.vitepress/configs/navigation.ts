@@ -43,6 +43,7 @@ export const nav: DefaultTheme.NavItem[] = [
     {
         text: 'Tutorials',
         items: [
+            { text: 'Tutorials Overview', link: '/tutorials/' },
             { text: 'Tutorial 1', link: '/tutorials/tutorial-01' },
             { text: 'Tutorial 2', link: '/tutorials/tutorial-02' },
             { text: 'Tutorial 3', link: '/tutorials/tutorial-03' }

@@ -9,33 +9,33 @@ outline: deep
 
 <div class='center-table'>
 
-| Quantity | Symbol | Value | SI Unit |
-|:---|:---:|:---:|:---:|
-| Speed of light in vacuum | $c$ | $3.00 \times 10^8$ | $\mathrm{m\,s^{-1}}$ |
-| Permeability of free space | $\mu_0$ | $4\pi \times 10^{-7}$ | $\mathrm{H\,m^{-1}}$ |
-| Permittivity of free space | $\varepsilon_0$ | $8.85 \times 10^{-12}$ | $\mathrm{F\,m^{-1}}$ |
-| Electron charge magnitude | $e$ | $1.60 \times 10^{-19}$ | $\mathrm{C}$ |
-| Planck constant | $h$ | $6.63 \times 10^{-34}$ | $\mathrm{J\,s}$ |
-| Electron mass | $m_e$ | $9.11 \times 10^{-31}$ | $\mathrm{kg}$ |
-|  |  | $5.49 \times 10^{-4}$ | $\mathrm{u}$ |
-| Neutron mass | $m_n$ | $1.674 \times 10^{-27}$ | $\mathrm{kg}$ |
-|  |  | $1.008665$ | $\mathrm{u}$ |
-| Proton mass | $m_p$ | $1.672 \times 10^{-27}$ | $\mathrm{kg}$ |
-|  |  | $1.007277$ | $\mathrm{u}$ |
-| Hydrogen mass | $m_H$ | $1.673 \times 10^{-27}$ | $\mathrm{kg}$ |
-|  |  | $1.007825$ | $\mathrm{u}$ |
-| Deuteron mass | $m_d$ | $3.34 \times 10^{-27}$ | $\mathrm{kg}$ |
-|  |  | $2.0141202$ | $\mathrm{u}$ |
-| Molar gas constant | $R$ | $8.31$ | $\mathrm{J\,K^{-1}\,mol^{-1}}$ |
-| Avogadro constant | $N_A$ | $6.02 \times 10^{23}$ | $\mathrm{mol^{-1}}$ |
-| Boltzmann constant | $k$ | $1.38 \times 10^{-23}$ | $\mathrm{J\,K^{-1}}$ |
-| Free-fall acceleration | $g$ | $9.81$ | $\mathrm{m\,s^{-2}}$ |
-| Atomic mass unit | $1\,u$ | $1.66 \times 10^{-27}$ | $\mathrm{kg}$ |
-|  |  | $931.5\ \mathrm{MeV}/c^2$ | $\mathrm{MeV\,c^{-2}}$ |
-| Electron volt | $1\,eV$ | $1.6 \times 10^{-19}$ | $\mathrm{J}$ |
-| Constant of proportionality for Coulomb’s law | $k=\dfrac{1}{4\pi\varepsilon_0}$ | $9.0 \times 10^9$ | $\mathrm{N\,m^2\,C^{-2}}$ |
-| Atmospheric pressure | $1\,atm$ | $1.013 \times 10^5$ | $\mathrm{Pa}$ |
-| Density of water | $\rho_w$ | $1000$ | $\mathrm{kg\,m^{-3}}$ |
+| Quantity | Symbol | Value |
+|:---|:---:|:---:|
+| Speed of light in vacuum | $c$ | $=3.00 \times 10^8$ $\mathrm{m\,s^{-1}}$ |
+| Permeability of free space | $\mu_0$ | $=4\pi \times 10^{-7}$ $\mathrm{H\,m^{-1}}$ |
+| Permittivity of free space | $\varepsilon_0$ | $=8.85 \times 10^{-12}$ $\mathrm{F\,m^{-1}}$ |
+| Electron charge magnitude | $e$ | $=1.60 \times 10^{-19}$ $\mathrm{C}$ |
+| Planck constant | $h$ | $=6.63 \times 10^{-34}$ $\mathrm{J\,s}$ |
+| Electron mass | $m_e$ | $=9.11 \times 10^{-31}$ $\mathrm{kg}$ |
+|  |  | $=5.49 \times 10^{-4}$ $\mathrm{u}$ |
+| Neutron mass | $m_n$ | $=1.674 \times 10^{-27}$ $\mathrm{kg}$ |
+|  |  | $=1.008665$ $\mathrm{u}$ |
+| Proton mass | $m_p$ | $=1.672 \times 10^{-27}$ $\mathrm{kg}$ |
+|  |  | $=1.007277$ $\mathrm{u}$ |
+| Hydrogen mass | $m_H$ | $=1.673 \times 10^{-27}$ $\mathrm{kg}$ |
+|  |  | $=1.007825$ $\mathrm{u}$ |
+| Deuteron mass | $m_d$ | $=3.34 \times 10^{-27}$ $\mathrm{kg}$ |
+|  |  | $=2.0141202$ $\mathrm{u}$ |
+| Molar gas constant | $R$ | $=8.31$ $\mathrm{J\,K^{-1}\,mol^{-1}}$ |
+| Avogadro constant | $N_A$ | $=6.02 \times 10^{23}$ $\mathrm{mol^{-1}}$ |
+| Boltzmann constant | $k$ | $=1.38 \times 10^{-23}$ $\mathrm{J\,K^{-1}}$ |
+| Free-fall acceleration | $g$ | $=9.81$ $\mathrm{m\,s^{-2}}$ |
+| Atomic mass unit | $1\,u$ | $=1.66 \times 10^{-27}$ $\mathrm{kg}$ |
+|  |  | $=931.5\ \mathrm{MeV}/c^2$ |
+| Electron volt | $1\,eV$ | $=1.6 \times 10^{-19}$ $\mathrm{J}$ |
+| Constant of proportionality for Coulomb’s law | $k=\dfrac{1}{4\pi\varepsilon_0}$ | $=9.0 \times 10^9$ $\mathrm{N\,m^2\,C^{-2}}$ |
+| Atmospheric pressure | $1\,atm$ | $=1.013 \times 10^5$ $\mathrm{Pa}$ |
+| Density of water | $\rho_w$ | $=1000$ $\mathrm{kg\,m^{-3}}$ |
 
 </div>
 

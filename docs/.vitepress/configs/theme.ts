@@ -17,7 +17,7 @@ export const theme: DefaultTheme.Config = {
 
     footer: {
         message: 'Released under the MIT License.',
-        copyright: 'Copyright © 2023 Physics Study Hub'
+        copyright: 'Copyright © 2026 Physics Study Hub'
     },
 
     search: {

@@ -30,5 +30,12 @@ export const sidebars: DefaultTheme.Sidebar = {
     { text: 'Experiment 4', link: '/labs/04-rotation-of-rigid-body' },
     { text: 'Experiment 5', link: '/labs/05-simple-harmonic-motion' },
     { text: 'Experiment 6', link: '/labs/06-standing-waves' }
-  ]
+  ],
+
+  '/tutorials/': [
+    { text: 'Tutorials Overview', link: '/tutorials/' },
+    { text: 'Tutorial 1', link: '/tutorials/tutorial-01' },
+    { text: 'Tutorial 2', link: '/tutorials/tutorial-02' },
+    { text: 'Tutorial 3', link: '/tutorials/tutorial-03' }
+  ],
 }

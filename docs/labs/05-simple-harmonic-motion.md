@@ -150,7 +150,7 @@ For large amplitude oscillations (> 10°), the period deviates from the simple f
 
 <div class="video-container">
   <iframe
-    src="https://www.youtube.com/embed/QBkHaG_nLd8?si=0OFx0fDGSdDUMx9P]"
+    src="https://www.youtube.com/embed/QBkHaG_nLd8?si=0OFx0fDGSdDUMx9P"
     title="Simple Harmonic Motion - Simple Pendulum"
     frameborder="0"
     allowfullscreen

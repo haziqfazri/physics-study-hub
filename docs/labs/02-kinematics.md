@@ -1,5 +1,5 @@
 ---
-title: Experiment 2 - Measurement and Uncertainty
+title: Experiment 2 - Free Fall and Projectile Motions
 outline: deep
 ---
 
@@ -19,9 +19,13 @@ $$s = ut + \frac{1}{2}at^2 \tag{2.1}$$
 
 By substituting the following values into `equation 2.1`:
 
-- $s$ = $-h$ (downward displacement of the body from the falling point to the ground)
-- $u$ = $0$ (the initial velocity of the body)
-- $a$ = $-g$ (the downward acceleration due to gravity)
+$$
+\begin{aligned}
+  s &= -h \text{ (downward displacement of the body from the falling point to the ground)} \\
+  u &= 0 \text{ (the initial velocity of the body)} \\
+  a &= -g \text{ (the downward acceleration due to gravity)}
+\end{aligned}
+$$
 
 We obtain:
 
@@ -57,7 +61,6 @@ Where *t* is the time taken for the steel ball from the end of the curved track 
 > A graph of `h against R²` is a straight line with gradient equal to $\frac{7}{10gt^2}$.
 
 ## Apparatus
-**Equipment List:**
 - Retort stand with a clamp
 - Timer
 - Metre rule
@@ -77,97 +80,122 @@ Where *t* is the time taken for the steel ball from the end of the curved track 
 
 ### A. Free Fall Motion
 
-#### Setup
-
-1. Set up the apparatus as shown in **`Figure 2.1`**
+1. Set up the apparatus as shown in **Figure 2.1**.
 
 <div style="display: flex; justify-content: center;">
   <img src="/labs/lab-02/figure-2-1.png" alt="Figure 2.1: Free Fall Apparatus" style="max-width: 400px; margin: 20px 0;" />
 </div>
 
-2. Switch on the circuit and attach the steel ball onto the upper contact
+2. Switch on the circuit and attach the steel ball onto the upper contact.
 
-#### Steps
+3. Adjust the height *h* of the electromagnet above the point of impact.
 
-1. Adjust the height `h` of the electromagnet above the point of impact
-2. Switch off the circuit and let the ball fall
-3. Record the height `h` and time `t`
-4. Repeat steps 1-3 for at least **six different heights** `h`
-5. Tabulate the data in a table with columns for:
-   - Height `h` (in cm or m)
-   - Fall time `t` (in s)
-   - Time squared `t²` (in s²)
+4. Switch off the circuit and let the ball fall. Record the height, *h* and time, *t*.
 
-#### Data Analysis
+5. Repeat steps (3) and (4) for at least **six different heights**, *h*.
 
-6. Plot a graph of `h` against `t²`
-7. Determine the acceleration due to gravity `g` from the gradient of the graph using:
+6. Tabulate the data in a table.
+
+7. Plot a graph of `h against t²`.
+
+8. Determine the acceleration due to gravity `g` from the gradient of the graph using:
    $$g = 2 \times \text{gradient}$$
-8. Determine the uncertainty of acceleration due to gravity `Δg`
+
+9. Determine the uncertainty of acceleration due to gravity *Δg*.
 
 ### B. Projectile Motion
 
-#### Setup
-
-1. Set up the apparatus as shown in **`Figure 2.2`**
+1. Set up the apparatus as shown in **`Figure 2.2`**.
 
 <div style="display: flex; justify-content: center;">
   <img src="/labs/lab-02/figure-2-2.png" alt="Figure 2.2: Projectile Apparatus" style="max-width: 400px; margin: 20px 0;" />
 </div>
 
-#### Steps
+2. Release the steel ball on the curvature railing **at least six different heights**, *h* and record the range, *R*.
 
-1. Release the steel ball on the curvature railing at **at least six different heights** `h`
-2. Record the range `R` (horizontal distance traveled) for each release height
-3. Tabulate the data in a table with columns for:
-   - Release height `h` (in cm or m)
-   - Range `R` (in cm or m)
-   - Range squared `R²` (in cm² or m²)
+3. Tabulate the data in a table.
 
-#### Data Analysis
+4. Plot a graph of `h against R²`.
 
-4. Plot a graph of `h` against `R²`
-5. Measure the height of the table `H` (the edge of the railing to the landing surface)
-6. By referring to the graph of `h` against `t²` from **Experiment A**, obtain the value of `t²` for `H` using extrapolation
-7. Determine the acceleration due to gravity `g` from the gradient of the `h` vs `R²` graph
+5. Measure the height of the table *H* (the edge of the railing to the landing surface)
 
-#### Final Steps
+6. By referring to the graph of `h against t²` from **Experiment A**, obtain the value of *t²* for *H* using extrapolation.
 
-8. Determine the uncertainty of acceleration due to gravity `Δg`
-9. Compare the acceleration due to gravity `g` obtained from both experiments with the standard value (≈ 9.81 m/s²)
-10. Write comments explaining any differences between your results and the standard value
+7. Determine the acceleration due to gravity *g* from the gradient of the *h* vs *R²* graph.
+
+8. Determine the uncertainty of acceleration due to gravity *Δg*.
+
+9. Compare the acceleration due to gravity *g* obtained from both experiments with the standard value (≈ 9.81 m/s²).
 
 ## Data Recording Templates
 
 ### Free Fall Motion Data Table
 
-<div class='center-table'>
-
-| No | Height `h` (m) ($\pm$.......) | Time `t` (s) ($\pm$.......) | Time squared `t²` (s²) |
-|:---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-
-</div>
+<table style="text-align: center;">
+<colgroup>
+    <col style="width: 5%">
+    <col style="width: 40%">
+    <col style="width: 10%">
+    <col style="width: 10%">
+    <col style="width: 10%"> 
+    <col style="width: 25%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th rowspan="2" style="text-align:center;">No</th>
+      <th rowspan="2" style="text-align:center;">Height, h<br><strong>(± ....... cm)</strong></th>
+      <th colspan="3" style="text-align:center;">Time taken, t<br><strong>(± ....... s)</strong></th>
+      <th rowspan="2" style="text-align:center;"><strong>t² (s²)</strong></th>
+    </tr>
+    <tr>
+      <th style="text-align:center;">t<sub>1</sub></th>
+      <th style="text-align:center;">t<sub>2</sub></th>
+      <th style="text-align:center;">t<sub>avg</sub></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>6</td><td></td><td></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
 
 ### Projectile Motion Data Table
 
-<div class='center-table'>
-
-| No | Height `h` (m) ($\pm$.......) | Range `R` (m) ($\pm$.......) | Range squared `R²` (m²) |
-|:---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-
-</div>
+<table style="text-align: center;">
+<colgroup>
+    <col style="width: 5%">
+    <col style="width: 40%">
+    <col style="width: 10%">
+    <col style="width: 10%">
+    <col style="width: 10%"> 
+    <col style="width: 25%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th rowspan="2" style="text-align:center;">No</th>
+      <th rowspan="2" style="text-align:center;">Height, h<br><strong>(± ....... cm)</strong></th>
+      <th colspan="3" style="text-align:center;">Horizontal Range, R<br><strong>(± ....... m)</strong></th>
+      <th rowspan="2" style="text-align:center;"><strong>R² (m²)</strong></th>
+    </tr>
+    <tr>
+      <th style="text-align:center;">R<sub>1</sub></th>
+      <th style="text-align:center;">R<sub>2</sub></th>
+      <th style="text-align:center;">R<sub>avg</sub></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>6</td><td></td><td></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
 
 ## Guideline Video
 

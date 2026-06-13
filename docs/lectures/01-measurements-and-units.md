@@ -1,3 +1,3 @@
-# Chapter 1 Notes
+# Topic 1: Physical Quantities and Measurements
 
-<PdfViewer src="/physics-study-hub/sample.pdf" />
+<PdfViewer src="/physics-study-hub/lectures/topic_01.pdf" />
