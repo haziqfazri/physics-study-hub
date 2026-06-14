@@ -1,12 +1,8 @@
 ---
-title: Tutorials
+title: Tutorial Book Semester 1
 outline: deep
 ---
 
-# Tutorials
+# Tutorial Book Semester 1 (SP015)
 
-Practice materials for SP015 Physics I.
-
-- [Tutorial 1](./tutorial-01)
-- [Tutorial 2](./tutorial-02)
-- [Tutorial 3](./tutorial-03)
+<PdfViewer src="/physics-study-hub/tutorials/TUTORIAL_BOOK.pdf" />
