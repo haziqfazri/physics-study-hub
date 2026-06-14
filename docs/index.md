@@ -24,7 +24,7 @@ features:
     details: Quick reference formula sheets for every topic to help you solve problems efficiently
   
   - title: 🔬 Lab Experiments
-    details: Practical lab experiments with safety guidelines and detailed procedures
+    details: Practical lab experiments with detailed procedures
   
   - title: ✏️ Tutorials
     details: Practice problems and solutions to reinforce your understanding

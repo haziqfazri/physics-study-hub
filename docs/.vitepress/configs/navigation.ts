@@ -21,6 +21,11 @@ export const nav: DefaultTheme.NavItem[] = [
         activeMatch: '^/course/'
     },
     {
+        text: 'Formula Sheets',
+        link: '/formulas/list-const-formulae',
+        activeMatch: '^/formulas/'
+    },
+    {
         text: 'Lectures',
         items: [
             { text: 'Physical Quantities & Measurements', link: '/lectures/01-measurements-and-units' },
@@ -36,18 +41,8 @@ export const nav: DefaultTheme.NavItem[] = [
         activeMatch: '^/lectures/'
     },
     {
-        text: 'Formula Sheets',
-        link: '/formulas/list-const-formulae',
-        activeMatch: '^/formulas/'
-    },
-    {
         text: 'Tutorials',
-        items: [
-            { text: 'Tutorials Overview', link: '/tutorials/' },
-            { text: 'Tutorial 1', link: '/tutorials/tutorial-01' },
-            { text: 'Tutorial 2', link: '/tutorials/tutorial-02' },
-            { text: 'Tutorial 3', link: '/tutorials/tutorial-03' }
-        ],
+        link: 'tutorials/index',
         activeMatch: '^/tutorials/'
     },
     {
