@@ -31,9 +31,6 @@ features:
   
   - title: 📋 Course Info
     details: Complete course outline, schedule, and assessment breakdown
-  
-  - title: 📊 Past Year Papers
-    details: Previous exam papers to prepare for your assessments
 ---
 
 <script setup>
