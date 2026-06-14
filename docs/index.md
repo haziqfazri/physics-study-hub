@@ -7,7 +7,6 @@ title: Home
 hero:
   name: "SP015 Physics I"
   text: "Course Notes, Tutorials, Labs & Formula Sheets"
-  tagline: Master the fundamentals of Physics with comprehensive study materials
   actions:
     - theme: brand
       text: Start Learning
