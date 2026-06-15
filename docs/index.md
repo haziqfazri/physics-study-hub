@@ -40,11 +40,7 @@ const members = [
     avatar: 'https://github.com/haziqfazri.png',
     name: 'Muhammad Haziq Fazri',
     title: 'Physics Lecturer',
-    org : 'Kolej Matrikulasi Labuan',
-    links: [
-      { icon: 'whatsapp', link :'https://wasap.my/+60173874434'},
-      { icon: 'gmail', link: 'mailto:bm-3466@moe-dl.edu.my' }
-    ]
+    org : 'Kolej Matrikulasi Labuan'
   },
 ]
 </script>
